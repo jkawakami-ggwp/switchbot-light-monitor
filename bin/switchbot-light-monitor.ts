@@ -1,9 +1,9 @@
 #!/opt/homebrew/opt/node/bin/node
 import * as cdk from 'aws-cdk-lib';
-import { SwitchbotLightMonitorStack } from '../lib/switchbot-light-monitor-stack';
+import { SwitchbotLightMonitorMainStack } from '../lib/switchbot-light-monitor-main-stack';
 
 const app = new cdk.App();
-new SwitchbotLightMonitorStack(app, 'SwitchbotLightMonitorStack', {
+new SwitchbotLightMonitorMainStack(app, 'SwitchbotLightMonitorMainStack', {
   /* If you don't specify 'env', this stack will be environment-agnostic.
    * Account/Region-dependent features and context lookups will not work,
    * but a single synthesized template can be deployed anywhere. */
